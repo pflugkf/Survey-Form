@@ -1,0 +1,107 @@
+body {
+  background: url(https://image.freepik.com/free-vector/sakura-flower-seamless-pattern_60706-224.jpg);
+  font-family: Oswald, "Trebuchet MS", Helvetica, sans-serif;
+  padding-bottom: 50px;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+#title {
+  font-size: 42px;
+  padding-top: 20px;
+}
+
+#description {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+#survey-form {
+  background-color: #ffb3bf;
+  width: 75%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 30px 30px 20px 30px;
+  border: 2px solid #ff99aa;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#submit {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid Pink;
+  border-radius: 10px;
+  background-color: LightCoral;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+}
+
+#submit:hover {
+  animation-name: bg-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-color {
+  100% {
+    background-color: #f4a4a4;
+  }
+}
+
+@media screen and (device-width: 700px) {
+  body {
+    background-size: contain;
+    background-position: center;
+  }
+
+  #survey-form {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 800px) {
+  #survey-form {
+    max-width: 750px;
+  }
+}
+
+.form-group {
+  padding: 20px 0px 20px 0px;
+}
+
+.form-list label {
+  white-space: nowrap;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  background-color: MistyRose;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-family: Oswald, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+  margin: 10px 10px;
+}
